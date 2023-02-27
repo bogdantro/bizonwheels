@@ -1,0 +1,122 @@
+#desNav {
+  display: none;
+}
+
+#mobileNav {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 18px;
+  padding-bottom: 3px;
+  position: fixed;
+  top: 0;
+  z-index: 10000000000000000000;
+  transition: 0s;
+  background: #061c2c;
+}
+#mobileNav.sticky {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.2);
+  transition: 0s;
+}
+#mobileNav .logo {
+  transition: 0.8s;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  z-index: 1000;
+}
+#mobileNav .logo img {
+  width: 160px;
+  height: auto;
+  transition: 0.3s;
+  transform: translateX(-5px);
+}
+#mobileNav .logo img:hover {
+  transform: scale(1.05);
+}
+#mobileNav .hamburger {
+  padding: 10px;
+  margin: 0;
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  text-align: center;
+  transform: translateY(2px) translateX(7px);
+}
+#mobileNav .hamburger span {
+  height: 2px;
+  width: 26px;
+  background: rgb(246, 246, 246);
+  border-radius: 3px;
+  display: block;
+  transition: 0.2s;
+  margin: 6.5px auto;
+  transform-origin: 25%;
+  opacity: 1;
+}
+#mobileNav .hamburger.click {
+  border-radius: 50%;
+}
+#mobileNav .hamburger.click .upper-span {
+  transform: rotate(45deg);
+}
+#mobileNav .hamburger.click .center-span {
+  display: none;
+}
+#mobileNav .hamburger.click .lower-span {
+  transform: rotate(-45deg) translateX(-1px);
+}
+#mobileNav #sidebar {
+  background: white;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 95px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+#mobileNav #sidebar a {
+  color: #183b56;
+  font-size: 15px;
+  padding: 16px;
+  padding-left: 18px;
+  display: block;
+  width: 100%;
+  background: rgb(246, 246, 246);
+  border-bottom: 1px solid rgba(60, 60, 60, 0.1);
+}
+#mobileNav #sidebar a:first-child {
+  padding-top: 20px;
+}
+#mobileNav #sidebar a:hover {
+  text-decoration: none;
+  background: white;
+}
+#mobileNav #sidebar.active {
+  pointer-events: visible;
+  opacity: 1;
+}
+#mobileNav .mobNavContact {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  padding: 6px 18px;
+  background: rgb(230, 230, 230);
+  display: flex;
+}
+#mobileNav .mobNavContact a {
+  font-size: 12px;
+  color: #183b56;
+  padding: 1px 7px;
+}
+#mobileNav .mobNavContact a span {
+  text-decoration: underline;
+}
+#mobileNav .mobNavContact a:first-child {
+  padding-left: 0;
+}/*# sourceMappingURL=nav.css.map */
